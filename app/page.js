@@ -4,7 +4,7 @@ import FlairLogo from "../public/flair_logo.png"
 
 export default function Home() {
   return (
-    <div className="min-h-screen p-8 pb-20">
+    <div className="min-h-screen flex justify-center items-center">
       <main className="flex flex-col gap-8 items-center justify-center">
         <Image
           className=""
