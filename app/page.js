@@ -1,104 +1,95 @@
-import Image from "next/image";
-import FlairLogo from "../public/flair_logo.png"
+"use client";
+import React, { useState } from "react";
 
+const Page = () => {
+  const [isVideoEnded, setIsVideoEnded] = useState(false);
 
-export default function Home() {
+  const handleVideoEnd = () => {
+    console.log("Video Ended");
+    setIsVideoEnded(true);
+  };
+
+  console.log(isVideoEnded);
+
+  const styles = {
+    gradientBackground: {
+      background: "linear-gradient(to bottom right, #6FAB87, #184A2C)",
+    },
+    rippleOverlay: {
+      backgroundImage: "url('/assets/images/miles-eyes.jpeg')",
+      opacity: 0.1,
+      backgroundSize: "contain",
+      backgroundPosition: "center",
+    },
+
+    blackOverlay: {
+      backgroundColor: "rgba(0, 0, 0, 0.6)", // Dark overlay for better readability
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      zIndex: 1,
+    },
+  };
+
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <main className="flex flex-col gap-8 items-center justify-center">
-        <Image
-          className=""
-          src={FlairLogo}
-          alt="Next.js logo"
-          width={380}
-          height={238}
-          priority
-        />
-        <p className="font-mono justify-self-stretch">Devs At Work</p>
-        {/* <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="relative h-screen">
+      {/* Video Background */}
+      {!isVideoEnded && (
+        <div className="absolute inset-0 z-0">
+          <video
+            onEnded={handleVideoEnd}
+            src={"/assets/videos/bg-video-49mb.mp4"}
+            data-wf-ignore="true"
+            data-object-fit="cover"
+            autoPlay
+            playsInline
+            muted
+            loop
+            className={`w-full h-full object-cover`}
+          />
+          {/* Overlay on Top of Video */}
+          <div style={styles.blackOverlay}></div>
+        </div>
+      )}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div> */}
-      </main>
-      {/* <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer> */}
+      {/* Text Content */}
+      <div className="relative z-10 flex justify-center mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-[90rem] lg:px-8 h-full text-white pt-[100px]">
+        {isVideoEnded && (
+          <div
+            className="absolute inset-0 z-10"
+            style={styles.rippleOverlay}
+          ></div>
+        )}
+
+        <div className="flex flex-col w-[60%]">
+          <p className="text-8xl mb-5 font-bold">WELCOME</p>
+          <p className="text-base font-light w-[80%]">
+            Join us for an extraordinary journey into the SpiderVerse — where
+            science, storytelling, technology, and pop culture intersect to
+            explore.
+          </p>
+          <button className="bg-white text-black py-2 px-10 mt-10 rounded-full w-fit">
+            Learn More
+          </button>
+        </div>
+        <div className="flex flex-col w-[40%] relative">
+          <p className="text-8xl mb-10 font-bold absolute bottom-5 right-0">
+            SPIDEYS
+          </p>
+        </div>
+      </div>
+
+      {/* Second Section */}
+      <div className="relative z-20 flex flex-col mx-auto max-w-2xl px-4 pb-24 pt-14 sm:px-6 lg:max-w-[70rem] bg-white lg:px-8 h-[90vh] text-black">
+        <p className="text-center mb-10">Welcome to Flair 2k24</p>
+        <p className="text-8xl text-center font-extrabold">
+          Discover the world's largest shared adventure, crafted by everyone
+        </p>
+      </div>
     </div>
   );
-}
+};
+
+export default Page;
