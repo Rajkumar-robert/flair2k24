@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Space_Grotesk } from "@next/font/google";
 import DetailsComponent from "./components/DetailsComponent";
 import { secondDivAnimation, styles, herotextAnimation } from "./utls";
@@ -44,16 +45,16 @@ const Page = () => {
           </div>
         )}
         <motion.div
-          className="relative z-10 flex justify-center mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-[90rem] lg:px-8 h-screen text-white pt-[100px]"
+          className="relative z-5 flex justify-center mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-[90rem] lg:px-8 h-screen text-white pt-[100px]"
           initial="hidden"
           animate="visible"
           variants={herotextAnimation}
         >
           <motion.div className="flex flex-col w-[60%]">
             <motion.p className="text-[5rem] sm:text-[9rem] font-bold ">
-              WELCOME
+              FLAIR - IT
             </motion.p>
-            <motion.p className={space_grotesk.className + " sm:w-[30%] "}>
+            <motion.p className={space_grotesk.className + " sm:w-[50%] "}>
               {text.map((el, i) => (
                 <motion.span
                   initial={{ opacity: 0 }}
@@ -75,13 +76,14 @@ const Page = () => {
               Learn More
             </motion.button>
           </motion.div>
+
           <motion.div
             className="flex flex-col w-[40%] relative"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
             <motion.p className="text-[5rem] sm:text-[9rem] mb-5 font-bold absolute bottom-5 right-0">
-              SPIDEYS
+              2K24
             </motion.p>
           </motion.div>
         </motion.div>

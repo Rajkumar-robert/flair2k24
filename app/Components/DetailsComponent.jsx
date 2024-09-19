@@ -21,7 +21,9 @@ const DetailsComponent = () => {
       time: "10:00 AM - 11:30 AM",
       description:
         "A paper presentation event where innovators showcase their research and breakthrough ideas.",
-      url: "",
+      photoURL: "/assets/images/miguel-bg.jpeg",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSfaKZoL5zhuDRFO_qCu_C-75gs-baom-WyN6iOI4I11uWTWaw/viewform?usp=sf_link",
+      guidelineURL: "/assets/guidelines/code-debugging.pdf",
     },
     {
       name: "Quantum Quest",
@@ -29,7 +31,10 @@ const DetailsComponent = () => {
       time: "1:30 PM - 2:30 PM",
       description:
         "Test your technical knowledge in this challenging and engaging quiz competition.",
+      photoURL: "/assets/images/miguel-bg.jpeg",
+
       url: "",
+      guidelineURL: "/assets/guidelines/code-debugging.pdf",
     },
     {
       name: "Glitchverse Guess",
@@ -37,7 +42,10 @@ const DetailsComponent = () => {
       time: "1:30 PM - 2:45 PM",
       description:
         "A fun-filled event of technical charades where teams guess tech-related terms through clues.",
+      photoURL: "/assets/images/miguel-bg.jpeg",
+
       url: "",
+      guidelineURL: "/assets/guidelines/code-debugging.pdf",
     },
     {
       name: "Into the Memeverse",
@@ -45,7 +53,10 @@ const DetailsComponent = () => {
       time: "12:00 PM - 1:00 PM",
       description:
         "A creative event where participants showcase their skills by creating technical memes.",
-      url: "",
+      photoURL: "/assets/images/miguel-bg.jpeg",
+
+      url: "https://forms.gle/XYCRLJT5YBJYiaF6A",
+      guidelineURL: "/assets/guidelines/code-debugging.pdf",
     },
     {
       name: "Code Swing Duo",
@@ -53,7 +64,10 @@ const DetailsComponent = () => {
       time: "11:00 AM - 12:30 PM",
       description:
         "Partner up and compete to debug code in real-time, racing against the clock.",
-      url: "",
+      photoURL: "/assets/images/miguel-bg.jpeg",
+
+      url: "https://forms.gle/PmgZaYbDxeumco359",
+      guidelineURL: "/assets/guidelines/code-debugging.pdf",
     },
 
     {
@@ -62,7 +76,10 @@ const DetailsComponent = () => {
       time: "12:00 PM - 1:00 PM",
       description:
         "Embark on a thrilling treasure hunt, deciphering clues and solving puzzles to uncover the prize.",
-      url: "",
+      photoURL: "/assets/images/miguel-bg.jpeg",
+
+      url: "https://forms.gle/Mwikzt8cJCnFeSjAA",
+      guidelineURL: "/assets/guidelines/code-debugging.pdf",
     },
     {
       name: "Multiversal Link Up",
@@ -70,7 +87,10 @@ const DetailsComponent = () => {
       time: "1:15 PM - 2:45 PM",
       description:
         "A networking event where participants connect the dots through interactive activities.",
-      url: "",
+      photoURL: "/assets/images/miguel-bg.jpeg",
+
+      url: "https://forms.gle/yfpXuE4tLBakX7db9",
+      guidelineURL: "/assets/guidelines/code-debugging.pdf",
     },
     {
       name: "Spidey Prompts",
@@ -78,7 +98,10 @@ const DetailsComponent = () => {
       time: "10:30 AM - 11:30 AM",
       description:
         "Dive into the world of AI and see how creative you can get with generating AI prompts.",
-      url: "",
+      photoURL: "/assets/images/miguel-bg.jpeg",
+
+      url: "https://forms.gle/3ruFDPs5pptwhRrR9",
+      guidelineURL: "/assets/guidelines/code-debugging.pdf",
     },
   ];
 
@@ -102,12 +125,24 @@ const DetailsComponent = () => {
       </motion.p>
 
       {/* Description Text Animation */}
-      <motion.p className="text-4xl sm:text-8xl text-center font-bold w-[87%] sm:w-[70%] mx-auto mb-5">
+      <motion.p
+        className="text-4xl sm:text-8xl text-center font-bold w-[87%] sm:w-[70%] mx-auto mb-5"
+        initial={{
+          scale: 0.9,
+          rotateY: 10,
+        }}
+        whileInView={{
+          scale: 1,
+        }}
+        transition={{
+          duration: 0.5,
+        }}
+      >
         {descriptionText.map((el, i) => (
           <motion.span
             key={i}
             initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
+            animate={{ opacity: 1 }}
             transition={{
               duration: 0.75,
               delay: i / 5,

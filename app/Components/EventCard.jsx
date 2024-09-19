@@ -22,7 +22,7 @@ export default function EventCard({ event }) {
         <CardTitle className="">
           <Image
             className="rounded-lg object-contain w-full"
-            src={""}
+            src={event.photoURL}
             alt={event.name}
             width={500}
             height={300}
@@ -74,12 +74,20 @@ export default function EventCard({ event }) {
           }
         >
           <Button className="flex-1 ">
-            <Link href={event.url.toString()} className="text-xs">
+            <Link
+              href={event.url.toString()}
+              target="_blank"
+              className="text-xs"
+            >
               Register Now
             </Link>
           </Button>
           <Button className="flex-1">
-            <Link href={event.url.toString()} className="text-xs">
+            <Link
+              href={event.guidelineURL.toString()}
+              target="_blank"
+              className="text-xs"
+            >
               Event Guidelines
             </Link>
           </Button>

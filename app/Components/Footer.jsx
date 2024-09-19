@@ -17,15 +17,23 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white pt-12">
       {/* Main Footer Content */}
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 ">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 ">
         {/* Logo Section */}
         <div className="flex flex-col items-start space-y-4">
-          <Image
-            src={"/assets/images/logo.png"}
-            width={120}
-            height={40}
-            alt="Logo"
-          />
+          <div className="flex gap-10">
+            <Image
+              src={"/assets/images/logo.png"}
+              width={100}
+              height={100}
+              alt="Logo"
+            />
+            <Image
+              src={"/assets/images/grait-logo-white.png"}
+              width={100}
+              height={100}
+              className="object-cover"
+            />
+          </div>
           <p className={"text-sm " + space_grotesk.className}>
             Join us for a unique journey, where the future meets the present in
             extraordinary ways.
@@ -48,7 +56,7 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="">
           <h4 className="text-lg  mb-4 tracking-widest">Quick Links</h4>
           <ul className={"space-y-3 text-sm " + space_grotesk.className}>
             <li>
@@ -66,33 +74,6 @@ const Footer = () => {
             <li>
               <a href="#" className="hover:text-gray-400">
                 Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Resources */}
-        <div>
-          <h4 className="text-lg  mb-4 tracking-widest">Resources</h4>
-          <ul className={"space-y-3 text-sm " + space_grotesk.className}>
-            <li>
-              <a href="#" className="hover:text-gray-400">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-400">
-                Terms & Conditions
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-400">
-                FAQs
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-400">
-                Help Center
               </a>
             </li>
           </ul>
