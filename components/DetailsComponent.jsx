@@ -22,8 +22,8 @@ const DetailsComponent = () => {
       description:
         "A paper presentation event where innovators showcase their research and breakthrough ideas.",
       photoURL: "/assets/images/miguel-bg.jpeg",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSfaKZoL5zhuDRFO_qCu_C-75gs-baom-WyN6iOI4I11uWTWaw/viewform?usp=sf_link",
-      guidelineURL: "/assets/guidelines/code-debugging.pdf",
+      url: "https://forms.gle/Xg1btLowaikSGE79A",
+      guidelineURL: "/assets/guidelines/paper-presentation.pdf",
     },
     {
       name: "Quantum Quest",
@@ -33,8 +33,8 @@ const DetailsComponent = () => {
         "Test your technical knowledge in this challenging and engaging quiz competition.",
       photoURL: "/assets/images/miguel-bg.jpeg",
 
-      url: "",
-      guidelineURL: "/assets/guidelines/code-debugging.pdf",
+      url: "https://forms.gle/4YFDfV7nK77vmg5TA",
+      guidelineURL: "/assets/guidelines/tech-quiz.pdf",
     },
     {
       name: "Glitchverse Guess",
@@ -44,8 +44,8 @@ const DetailsComponent = () => {
         "A fun-filled event of technical charades where teams guess tech-related terms through clues.",
       photoURL: "/assets/images/miguel-bg.jpeg",
 
-      url: "",
-      guidelineURL: "/assets/guidelines/code-debugging.pdf",
+      url: "https://forms.gle/eGPQkQKH4avibKkH8",
+      guidelineURL: "/assets/guidelines/tech-charades.pdf",
     },
     {
       name: "Into the Memeverse",
@@ -56,7 +56,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/XYCRLJT5YBJYiaF6A",
-      guidelineURL: "/assets/guidelines/code-debugging.pdf",
+      guidelineURL: "/assets/guidelines/tech-meme.pdf",
     },
     {
       name: "Code Swing Duo",
@@ -79,7 +79,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/Mwikzt8cJCnFeSjAA",
-      guidelineURL: "/assets/guidelines/code-debugging.pdf",
+      guidelineURL: "/assets/guidelines/treasure-hunt.pdf",
     },
     {
       name: "Multiversal Link Up",
@@ -90,7 +90,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/yfpXuE4tLBakX7db9",
-      guidelineURL: "/assets/guidelines/code-debugging.pdf",
+      guidelineURL: "/assets/guidelines/connections.pdf",
     },
     {
       name: "Spidey Prompts",
@@ -101,7 +101,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/3ruFDPs5pptwhRrR9",
-      guidelineURL: "/assets/guidelines/code-debugging.pdf",
+      guidelineURL: "/assets/guidelines/ai-prompting.pdf",
     },
   ];
 
