@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { secondDivAnimation } from "../utls";
+import { secondDivAnimation } from "../app/utls";
 import { motion, useInView } from "framer-motion";
 import { Space_Grotesk } from "@next/font/google";
 import EventCard from "./EventCard";

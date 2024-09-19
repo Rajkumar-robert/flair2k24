@@ -1,11 +1,9 @@
 "use client";
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Space_Grotesk } from "@next/font/google";
-import DetailsComponent from "./components/DetailsComponent";
+import DetailsComponent from "@/components/DetailsComponent";
 import { secondDivAnimation, styles, herotextAnimation } from "./utls";
-import Footer from "./components/Footer";
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
