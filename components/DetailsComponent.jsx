@@ -12,7 +12,7 @@ const space_grotesk = Space_Grotesk({
 
 const DetailsComponent = () => {
   const descriptionText =
-    "Discover the amazing symposium adventure, crafted by ".split(" ");
+    "Discover the amazing symposium adventure, crafted by it dept".split(" ");
 
   const events = [
     {
