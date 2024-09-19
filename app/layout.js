@@ -1,22 +1,14 @@
-import { Space_Grotesk } from "next/font/google";
-import localFont from "next/font/local";
-
+import { Space_Grotesk } from "@next/font/google";
+import { Anton, Oswald } from "@next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const anton = Anton({ subsets: ["latin"], weight: ["400"] });
+const oswald = Oswald({ subsets: ["latin"], weight: ["400", "700"] });
+const space_grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata = {
@@ -27,9 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={space_grotesk.className}>
-        <Navbar />
-        <div className="">{children}</div>
+      <body className={anton.className}>
+        {/* Apply Space Grotesk only to Navbar */}
+        <Navbar className={space_grotesk.className} />
+        {children}
+        <Footer />
       </body>
     </html>
   );
