@@ -102,30 +102,26 @@ const Footer = () => {
         <div>
           <h4 className="text-lg  mb-4 tracking-widest">Contact Us</h4>
           <div className={space_grotesk.className}>
-            <p className="text-sm">
-              1234 SpiderVerse Ave <br />
-              New York, NY 10001
-            </p>
-            <p className="mt-3">
-              <a href="tel:+123456789" className="hover:text-gray-400">
-                +1 (234) 567-8901
-              </a>
-            </p>
-            <p>
-              <a
-                href="mailto:info@spiderverse.com"
-                className="hover:text-gray-400"
-              >
-                info@spiderverse.com
-              </a>
-            </p>
+            <p className="tracking-widest">COORDINATORS</p>
+            <p className="text-sm mt-2">Divyakrishnan R : +91 99406 39989</p>
+            <p className="text-sm ">Guru Keerthi : +91 80560 39970</p>
+            <p className="tracking-widest mt-5">MAIL US</p>
+
+            <a
+              href="mailto:flairit@licet.ac.in"
+              className="hover:text-gray-400 underline"
+            >
+              flairit@licet.ac.in
+            </a>
           </div>
         </div>
       </div>
 
       {/* Bottom Footer */}
       <div className="flex justify-center items-center border-t border-gray-700 mt-12 py-4 text-center text-sm">
-        <p className={"mr-5 " + space_grotesk.className}>See y'all on 28th September</p>
+        <p className={"mr-5 " + space_grotesk.className}>
+          See y'all on 28th September
+        </p>
         <Image
           src={"/assets/images/spider-web.png"}
           width={20}

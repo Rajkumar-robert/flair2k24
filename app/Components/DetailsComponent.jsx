@@ -17,72 +17,65 @@ const DetailsComponent = () => {
   const events = [
     {
       name: "Collider Conclave",
-      date: "2024-10-12",
-      location: "San Francisco, CA",
-      time: "10:00 AM - 4:00 PM",
+      location: "H23 , I31",
+      time: "10:00 AM - 11:30 AM",
       description:
         "A paper presentation event where innovators showcase their research and breakthrough ideas.",
       url: "",
     },
     {
       name: "Quantum Quest",
-      date: "2024-11-05",
-      location: "New York, NY",
-      time: "9:00 AM - 3:00 PM",
+      location: "I32",
+      time: "1:30 PM - 2:30 PM",
       description:
         "Test your technical knowledge in this challenging and engaging quiz competition.",
       url: "",
     },
     {
       name: "Glitchverse Guess",
-      date: "2024-12-01",
-      location: "Las Vegas, NV",
-      time: "12:00 PM - 8:00 PM",
+      location: "H23",
+      time: "1:30 PM - 2:45 PM",
       description:
         "A fun-filled event of technical charades where teams guess tech-related terms through clues.",
       url: "",
     },
     {
-      name: "Code Swing Duo",
-      date: "2024-10-20",
-      location: "London, UK",
-      time: "10:00 AM - 5:00 PM",
-      description:
-        "Partner up and compete to debug code in real-time, racing against the clock.",
-      url: "",
-    },
-    {
       name: "Into the Memeverse",
-      date: "2024-09-28",
-      location: "Austin, TX",
-      time: "6:00 PM - 9:00 PM",
+      location: "J14",
+      time: "12:00 PM - 1:00 PM",
       description:
         "A creative event where participants showcase their skills by creating technical memes.",
       url: "",
     },
     {
+      name: "Code Swing Duo",
+      location: "A22",
+      time: "11:00 AM - 12:30 PM",
+      description:
+        "Partner up and compete to debug code in real-time, racing against the clock.",
+      url: "",
+    },
+
+    {
       name: "Sinister Hunt",
-      date: "2024-11-15",
-      location: "Los Angeles, CA",
-      time: "10:00 AM - 6:00 PM",
+      location: "A21",
+      time: "12:00 PM - 1:00 PM",
       description:
         "Embark on a thrilling treasure hunt, deciphering clues and solving puzzles to uncover the prize.",
       url: "",
     },
     {
       name: "Multiversal Link Up",
-      date: "2024-10-07",
-      location: "Miami, FL",
-      time: "2:00 PM - 11:00 PM",
+      location: "I32",
+      time: "1:15 PM - 2:45 PM",
       description:
-        "A networking event where participants connect the dots in the tech world through interactive activities.",
+        "A networking event where participants connect the dots through interactive activities.",
       url: "",
     },
     {
       name: "Spidey Prompts",
-      date: "2024-12-12",
-      location: "Toronto, Canada",
-      time: "10:00 AM - 4:00 PM",
+      location: "A21",
+      time: "10:30 AM - 11:30 AM",
       description:
         "Dive into the world of AI and see how creative you can get with generating AI prompts.",
       url: "",
