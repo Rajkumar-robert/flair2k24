@@ -39,7 +39,7 @@ const Page = () => {
     detailsRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  if (1) {
+  if (loading) {
     return <Preloader setLoading={setLoading} />;
   }
 
@@ -66,13 +66,13 @@ const Page = () => {
           </div>
         )}
         <motion.div
-          className="relative z-5 flex justify-center mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-[90rem] lg:px-8 h-screen text-white pt-[100px]"
+          className="relative z-5 flex flex-col lg:flex-row justify-between lg:justify-center mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-[90rem] lg:px-8 h-screen text-white pt-[100px]"
           initial="hidden"
           animate="visible"
           variants={herotextAnimation}
         >
-          <motion.div className="flex flex-col w-[60%]">
-            <motion.p className="text-[5rem] sm:text-[9rem] font-bold ">
+          <motion.div className="flex flex-col w-[100%] lg:w-[60%]">
+            <motion.p className="text-[80px] sm:text-[9rem] font-bold tracking-wide">
               FLAIR - IT
             </motion.p>
             <motion.p className={space_grotesk.className + " sm:w-[50%] "}>
@@ -99,13 +99,16 @@ const Page = () => {
           </motion.div>
 
           <motion.div
-            className="flex flex-col w-[40%] relative"
+            className="flex flex-col w-[100%] lg:w-[40%] relative items-end"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <motion.p className="text-[5rem] sm:text-[9rem] mb-5 font-bold absolute bottom-5 right-0">
-              2K24
-            </motion.p>
+            <motion.div className="text-[5rem] sm:text-[9rem] mb-5 font-bold absolute bottom-5 right-0 tracking-wide">
+              <div>
+                2K24
+              </div>
+              
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>
