@@ -18,7 +18,7 @@ const DetailsComponent = () => {
     {
       name: "Collider Conclave",
       location: "H23 , I31",
-      time: "10:00 AM - 11:30 AM",
+      time: "9:45 AM - 11:15 AM",
       description:
         "A paper presentation event where innovators showcase their research and breakthrough ideas.",
       photoURL: "/assets/images/miguel-bg.jpeg",
@@ -38,7 +38,7 @@ const DetailsComponent = () => {
     },
     {
       name: "Glitchverse Guess",
-      location: "H23",
+      location: "I33",
       time: "1:30 PM - 2:45 PM",
       description:
         "A fun-filled event of technical charades where teams guess tech-related terms through clues.",
@@ -73,7 +73,7 @@ const DetailsComponent = () => {
     {
       name: "Sinister Hunt",
       location: "A21",
-      time: "12:00 PM - 1:00 PM",
+      time: "12:00 PM - 1:30 PM",
       description:
         "Embark on a thrilling treasure hunt, deciphering clues and solving puzzles to uncover the prize.",
       photoURL: "/assets/images/miguel-bg.jpeg",
@@ -95,7 +95,7 @@ const DetailsComponent = () => {
     {
       name: "Spidey Prompts",
       location: "A21",
-      time: "10:30 AM - 11:30 AM",
+      time: "10:15 AM - 11:15 AM",
       description:
         "Dive into the world of AI and see how creative you can get with generating AI prompts.",
       photoURL: "/assets/images/miguel-bg.jpeg",
