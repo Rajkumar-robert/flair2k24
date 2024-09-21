@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Navbar = ({ className }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +25,11 @@ const Navbar = ({ className }) => {
   }, []);
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 1 }}
+    transition={{ duration: 0.8 }}
       className={`fixed w-full z-20 flex flex-col justify-center px-5 sm:py-2 bg-black sm:bg-transparent ${className}`}
     >
       <div
@@ -45,7 +50,7 @@ const Navbar = ({ className }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

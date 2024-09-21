@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useEffect } from "react";
 import { motion } from "framer-motion";
 import { Space_Grotesk } from "@next/font/google";
 import DetailsComponent from "@/components/DetailsComponent";
 import { secondDivAnimation, styles, herotextAnimation } from "./utls";
+import Preloader from "@/components/Preloader";
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -13,6 +14,19 @@ const space_grotesk = Space_Grotesk({
 const Page = () => {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
   const detailsRef = useRef(null); // Create a ref for the DetailsComponent
+  const [loading, setLoading] = useState(null);
+
+  useEffect(() => {
+    let isLoaded = sessionStorage.getItem("isLoaded");
+
+    if (!isLoaded) {
+      setLoading(true);
+    } else {
+      setLoading(false);
+    }
+  }, []);
+
+
 
   const text =
     "Join us for an extraordinary journey into the SpiderVerse".split(" ");
@@ -25,8 +39,17 @@ const Page = () => {
     detailsRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  if (1) {
+    return <Preloader setLoading={setLoading} />;
+  }
+
+
   return (
-    <div>
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 1 }}
+    transition={{ duration: 0.8 }}>
       <div className="relative h-screen">
         {!isVideoEnded && (
           <div className="absolute inset-0 z-0">
@@ -91,7 +114,7 @@ const Page = () => {
       <div ref={detailsRef}>
         <DetailsComponent />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
