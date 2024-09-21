@@ -72,7 +72,7 @@ const Page = () => {
           variants={herotextAnimation}
         >
           <motion.div className="flex flex-col w-[100%] lg:w-[60%]">
-            <motion.p className="text-[80px] sm:text-[9rem] font-bold tracking-wide">
+            <motion.p className="text-[80px] sm:text-[9rem] font-bold tracking-wide mix-blend-exclusion">
               FLAIR - IT
             </motion.p>
             <motion.p className={space_grotesk.className + " sm:w-[50%] "}>
@@ -98,12 +98,14 @@ const Page = () => {
             </motion.button>
           </motion.div>
 
+          
+
           <motion.div
             className="flex flex-col w-[100%] lg:w-[40%] relative items-end"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <motion.div className="text-[5rem] sm:text-[9rem] mb-5 font-bold absolute bottom-5 right-0 tracking-wide">
+            <motion.div className="text-[5rem] sm:text-[9rem] mb-5 font-bold absolute bottom-5 right-0 tracking-wide mix-blend-exclusion">
               <div>
                 2K24
               </div>
