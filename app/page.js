@@ -55,12 +55,14 @@ const Page = () => {
           <div className="absolute inset-0 z-0">
             <video
               onEnded={handleVideoEnd}
-              src={"/assets/videos/bg-video-49mb.mp4"}
+              src={"/assets/videos/bg-video-49mb.webm"}
               autoPlay
               playsInline
               muted
               loop
+              poster="/assets/images/miles-eyes.jpeg"
               className="w-full h-full object-cover"
+
             />
             <div style={styles.blackOverlay}></div>
           </div>
