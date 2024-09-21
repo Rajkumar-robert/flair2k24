@@ -13,8 +13,7 @@ const space_grotesk = Space_Grotesk({
 
 export const metadata = {
   title: "Flair 2k24 | National Level Technical Symposium",
-  description:
-    "Flair 2k24 is a National Level Technical Symposium conducted by the Department of Computer Science and Engineering, Karpagam College of Engineering, Coimbatore. The event is scheduled to be held on 25th and 26th of March 2024. The symposium is a platform for students to showcase their technical skills and knowledge in various domains of Computer Science and Engineering.",
+  description: "Flair 2k24 is a National Level Technical Symposium ",
 };
 
 export default function RootLayout({ children }) {
