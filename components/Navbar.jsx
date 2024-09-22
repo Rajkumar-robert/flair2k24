@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { MdClose } from 'react-icons/md';
 import { RiMenu3Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
