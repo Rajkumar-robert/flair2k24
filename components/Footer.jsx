@@ -5,6 +5,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import { Space_Grotesk } from "@next/font/google";
 
@@ -40,17 +41,19 @@ const Footer = () => {
           </p>
           {/* Social Media Icons */}
           <div className="flex space-x-4">
-            <a href="#" aria-label="Facebook">
-              <FaFacebookF className="w-6 h-6 hover:text-gray-400" />
+            <a
+              href="https://maps.app.goo.gl/jVGfApGAtwkKvpPs9"
+              target="_blank"
+              aria-label="Google Maps"
+            >
+              <FaMapMarkerAlt className="w-6 h-6 hover:text-gray-400" />
             </a>
-            <a href="#" aria-label="Twitter">
-              <FaTwitter className="w-6 h-6 hover:text-gray-400" />
-            </a>
-            <a href="#" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/flairit_2k24/"
+              target="_blank"
+              aria-label="Instagram"
+            >
               <FaInstagram className="w-6 h-6 hover:text-gray-400" />
-            </a>
-            <a href="#" aria-label="LinkedIn">
-              <FaLinkedinIn className="w-6 h-6 hover:text-gray-400" />
             </a>
           </div>
         </div>

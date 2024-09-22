@@ -13,7 +13,8 @@ const space_grotesk = Space_Grotesk({
 
 export const metadata = {
   title: "Flair 2k24 | National Level Technical Symposium",
-  description: "Flair 2k24 is a National Level Technical Symposium ",
+  description:
+    "Flair 2k24 is a National Level Technical Symposium conducted by the Department of Information Technology, Loyola - ICAM College of Engineering and Technology.",
 };
 
 export default function RootLayout({ children }) {
