@@ -1,5 +1,5 @@
+import Card from "./card";
 // components/Carousel.js
-import Card from './Card';
 
 export default function Carousel({ cards, currentIndex }) {
   return (
