@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={anton.className}>
-        {/* Apply Space Grotesk only to Navbar */}
         <Navbar className={space_grotesk.className} />
         {children}
         <Footer />
