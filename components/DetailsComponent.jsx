@@ -23,7 +23,7 @@ const DetailsComponent = () => {
         "A paper presentation event where innovators showcase their research and breakthrough ideas.",
       photoURL: "/assets/images/miguel-bg.jpeg",
       url: "https://forms.gle/Xg1btLowaikSGE79A",
-      guidelineURL: "/assets/guidelines/paper-presentation.pdf",
+      guidelineURL: "/assets/guidelines/paper-presentations.pdf",
     },
     {
       name: "Quantum Quest",
@@ -67,7 +67,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/PmgZaYbDxeumco359",
-      guidelineURL: "/assets/guidelines/code-debugging.pdf",
+      guidelineURL: "/assets/guidelines/coding-partners.pdf",
     },
 
     {
