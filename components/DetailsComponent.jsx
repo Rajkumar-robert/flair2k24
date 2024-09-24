@@ -56,7 +56,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/XYCRLJT5YBJYiaF6A",
-      guidelineURL: "/assets/guidelines/tech-meme.pdf",
+      guidelineURL: "/assets/guidelines/memeverse.pdf",
     },
     {
       name: "Code Swing Duo",
@@ -90,7 +90,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/yfpXuE4tLBakX7db9",
-      guidelineURL: "/assets/guidelines/connections.pdf",
+      guidelineURL: "/assets/guidelines/tech-connections.pdf",
     },
     {
       name: "Spidey Prompts",
@@ -101,7 +101,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/3ruFDPs5pptwhRrR9",
-      guidelineURL: "/assets/guidelines/ai-prompting.pdf",
+      guidelineURL: "/assets/guidelines/ai-prompt.pdf",
     },
   ];
 
