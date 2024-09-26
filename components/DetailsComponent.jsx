@@ -45,7 +45,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/eGPQkQKH4avibKkH8",
-      guidelineURL: "/assets/guidelines/tech-charades.pdf",
+      guidelineURL: "/assets/guidelines/tech-charade.pdf",
     },
     {
       name: "Into the Memeverse",
@@ -56,7 +56,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/XYCRLJT5YBJYiaF6A",
-      guidelineURL: "/assets/guidelines/memeverse.pdf",
+      guidelineURL: "/assets/guidelines/meme-event.pdf",
     },
     {
       name: "Code Swing Duo",
@@ -90,7 +90,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/yfpXuE4tLBakX7db9",
-      guidelineURL: "/assets/guidelines/tech-connections.pdf",
+      guidelineURL: "/assets/guidelines/tech-conn.pdf",
     },
     {
       name: "Spidey Prompts",
@@ -101,7 +101,7 @@ const DetailsComponent = () => {
       photoURL: "/assets/images/miguel-bg.jpeg",
 
       url: "https://forms.gle/3ruFDPs5pptwhRrR9",
-      guidelineURL: "/assets/guidelines/ai-prompt.pdf",
+      guidelineURL: "/assets/guidelines/ai-prompts.pdf",
     },
   ];
 
